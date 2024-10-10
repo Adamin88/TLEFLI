@@ -78,11 +78,11 @@ const Navbar = () => {
                   <>
                     {/* Dropdown for User */}
                     <div className="relative group">
-                      <button className="z-10 text-gray-500 hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                      <button className="text-gray-500 hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium z-20">
                         <User className="inline-block w-5 h-5 mr-1" />
                         User
                       </button>
-                      <div className="left-0 mt-2 w-40 hidden group-hover:block bg-white shadow-lg rounded-md z-20">
+                      <div className="absolute left-0 mt-0 w-40 hidden group-hover:block bg-white shadow-lg rounded-md z-20">
                         <Link
                           to="/user-signin"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -104,7 +104,7 @@ const Navbar = () => {
                         <Building className="inline-block w-5 h-5 mr-1" />
                         Organization
                       </button>
-                      <div className="absolute left-0 mt-2 w-40 hidden group-hover:block focus-within:block bg-white shadow-lg rounded-md z-20">
+                      <div className="absolute left-0 mt-0 w-40 hidden group-hover:block focus-within:block bg-white shadow-lg rounded-md z-20">
                         <Link
                           to="/org-signin"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
