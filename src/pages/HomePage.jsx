@@ -88,40 +88,37 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white py-16 bg-gradient-to-r from-orange-300 to-rose-300">
+      <section className="bg-white py-16 bg-gradient-to-r from-amber-200 to-yellow-400">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">
-            Why Choose TLEFLI?
+          Pourquoi choisir TLEFLI ?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Community-Driven</h3>
+              <h3 className="text-xl font-semibold mb-2">Axée sur la communauté</h3>
               <p className="text-gray-600">
-                Join a network of people committed to helping each other recover
-                lost items.
+              Rejoignez un réseau de personnes engagées à s'entraider pour retrouver des objets perdus.
               </p>
             </div>
             <div className="text-center">
               <div className="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <BarChart className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Advanced Matching</h3>
+              <h3 className="text-xl font-semibold mb-2">Correspondance avancée</h3>
               <p className="text-gray-600">
-                Our sophisticated algorithm increases the chances of finding
-                your lost items.
+              Notre algorithme sophistiqué augmente les chances de retrouver vos objets perdus.
               </p>
             </div>
             <div className="text-center">
               <div className="bg-yellow-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Globe className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Global Reach</h3>
+              <h3 className="text-xl font-semibold mb-2">Réseau étendu</h3>
               <p className="text-gray-600">
-                Connect with people and businesses worldwide to recover your
-                items.
+              Connectez-vous avec des personnes et des entreprises partout pour retrouver vos objets perdus.
               </p>
             </div>
           </div>
