@@ -30,9 +30,9 @@ export default function ReportItemPage() {
   }
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container max-w-full py-8">
       <h1 className="text-3xl font-bold mb-8 text-center">Report an Item</h1>
-      <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+      <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md shadow-yellow-700">
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2">
             Item Status
