@@ -88,7 +88,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white py-16 bg-gradient-to-r from-amber-200 to-yellow-400">
+      <section className="bg-white py-16 ">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">
           Pourquoi choisir TLEFLI ?

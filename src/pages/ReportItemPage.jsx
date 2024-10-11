@@ -1,41 +1,44 @@
-import { useState } from 'react'
-import { Camera } from 'lucide-react'
+import { useState } from "react";
+import { Camera } from "lucide-react";
 
 export default function ReportItemPage() {
   const [itemData, setItemData] = useState({
-    type: 'lost',
-    category: '',
-    description: '',
-    date: '',
-    location: '',
+    type: "lost",
+    category: "",
+    description: "",
+    date: "",
+    location: "",
     image: null,
-  })
+  });
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target
-    setItemData({ ...itemData, [name]: value })
-  }
+    const { name, value } = e.target;
+    setItemData({ ...itemData, [name]: value });
+  };
 
   const handleImageUpload = (e) => {
     if (e.target.files && e.target.files[0]) {
-      setItemData({ ...itemData, image: e.target.files[0] })
+      setItemData({ ...itemData, image: e.target.files[0] });
     }
-  }
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     // Here you would typically send the data to your backend
-    console.log('Submitting item data:', itemData)
+    console.log("Submitting item data:", itemData);
     // Reset form or show success message
-  }
+  };
 
   return (
     <div className="container max-w-full py-8">
-      <h1 className="text-3xl font-bold mb-8 text-center">Report an Item</h1>
-      <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md shadow-yellow-700">
+      <h1 className="text-3xl font-bold mb-8 text-center">Signaler un Objet</h1>
+      <form
+        onSubmit={handleSubmit}
+        className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md shadow-yellow-700"
+      >
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2">
-            Item Status
+            Statut
           </label>
           <div className="flex">
             <label className="inline-flex items-center mr-6">
@@ -44,10 +47,10 @@ export default function ReportItemPage() {
                 className="form-radio"
                 name="type"
                 value="lost"
-                checked={itemData.type === 'lost'}
+                checked={itemData.type === "lost"}
                 onChange={handleInputChange}
               />
-              <span className="ml-2">Lost</span>
+              <span className="ml-2">Perdu</span>
             </label>
             <label className="inline-flex items-center">
               <input
@@ -55,16 +58,19 @@ export default function ReportItemPage() {
                 className="form-radio"
                 name="type"
                 value="found"
-                checked={itemData.type === 'found'}
+                checked={itemData.type === "found"}
                 onChange={handleInputChange}
               />
-              <span className="ml-2">Found</span>
+              <span className="ml-2">Trouvé</span>
             </label>
           </div>
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="category">
-            Category
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="category"
+          >
+            Categorie
           </label>
           <select
             id="category"
@@ -73,17 +79,20 @@ export default function ReportItemPage() {
             onChange={handleInputChange}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           >
-            <option value="">Select a category</option>
-            <option value="electronics">Electronics</option>
-            <option value="jewelry">Jewelry</option>
-            <option value="clothing">Clothing</option>
-            <option value="accessories">Accessories</option>
+            <option value="">Sélectionnez une catégorie</option>
+            <option value="electronics">Électronique</option>
+            <option value="jewelry">Bijoux</option>
+            <option value="clothing">Vêtements</option>
+            <option value="accessories">Accessoires</option>
             <option value="documents">Documents</option>
-            <option value="other">Other</option>
+            <option value="other">Autre</option>
           </select>
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="description">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="description"
+          >
             Description
           </label>
           <textarea
@@ -93,12 +102,15 @@ export default function ReportItemPage() {
             onChange={handleInputChange}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             rows={3}
-            placeholder="Provide a detailed description of the item"
+            placeholder="Donnez une description détaillée de l'objet"
           ></textarea>
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="date">
-            Date {itemData.type === 'lost' ? 'Lost' : 'Found'}
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="date"
+          >
+            Date {itemData.type === "lost" ? "Lost" : "Found"}
           </label>
           <input
             type="date"
@@ -110,7 +122,10 @@ export default function ReportItemPage() {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="location">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="location"
+          >
             Location
           </label>
           <input
@@ -130,8 +145,14 @@ export default function ReportItemPage() {
           <div className="flex items-center justify-center w-full">
             <label className="w-full flex flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue-500 hover:text-white">
               <Camera className="w-8 h-8" />
-              <span className="mt-2 text-base leading-normal">Select a file</span>
-              <input type='file' className="hidden" onChange={handleImageUpload} />
+              <span className="mt-2 text-base leading-normal">
+                Select a file
+              </span>
+              <input
+                type="file"
+                className="hidden"
+                onChange={handleImageUpload}
+              />
             </label>
           </div>
         </div>
@@ -145,5 +166,5 @@ export default function ReportItemPage() {
         </div>
       </form>
     </div>
-  )
+  );
 }
