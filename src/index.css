@@ -10,7 +10,7 @@
 @layer components {
     .zoom-in {
       @apply opacity-0;
-      animation: zoom-out 1.5s forwards;
+      animation: zoom-out 2s forwards;
     }
   
     @keyframes zoom-out {
@@ -27,7 +27,7 @@
 
   @layer components {
     .rotate-logo {
-      animation: rotate-text 2s linear forwards;
+      animation: rotate-text 1.5s linear forwards;
     }
   
     @keyframes rotate-text {
