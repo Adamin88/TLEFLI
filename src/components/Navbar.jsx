@@ -39,13 +39,13 @@ const Navbar = () => {
               <span className=" text-xl font-bold text-gray-800"><span className='text-yellow-600'>T</span>LEFLI</span>
             </Link>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-              <Link to="/" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              <Link to="/" className="border-transparent text-gray-800 hover:border-gray-300 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                 Home
               </Link>
-              <Link to="/report" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              <Link to="/report" className="border-transparent text-gray-800 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                 Report Item
               </Link>
-              <Link to="/my-items" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              <Link to="/my-items" className="border-transparent text-gray-800 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                 Mes Objets
               </Link>
             </div>
@@ -75,7 +75,7 @@ const Navbar = () => {
                   <>
                     {/* Dropdown for User */}
                     <div className="relative group">
-                      <button className="text-gray-500 hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                      <button className="text-gray-800 hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">
                         <User className="inline-block w-5 h-5 mr-1" />
                         User
                       </button>
@@ -97,7 +97,7 @@ const Navbar = () => {
 
                     {/* Dropdown for Organization */}
                     <div className="relative group">
-                      <button className="text-gray-500 hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                      <button className="text-gray-800 hover:bg-gray-100 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">
                         <Building className="inline-block w-5 h-5 mr-1" />
                         Organization
                       </button>
