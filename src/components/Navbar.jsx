@@ -32,11 +32,11 @@ const Navbar = () => {
   return (
     <nav className="mb-0 bg-gradient-to-r from-neutral-200 to-stone-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-around h-10">
+        <div className="flex justify-between h-10">
           <div className="flex">
             <Link to="/" className="flex-shrink-0 flex items-center">
               <Search className="w-8 h-8 bg-yellow-600 text-white rounded-full p-1 rotate-logo " alt="TLEFLI Logo" />
-              <span className=" text-xl font-bold text-gray-800"><span className='text-yellow-600'>T</span>LEFLI</span>
+              <span className=" text-xl text-gray-800 font-semibold"><span className='text-yellow-600 ml-1'>T</span>LEFLI</span>
             </Link>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               <Link to="/" className="border-transparent text-gray-800 hover:border-gray-300 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
