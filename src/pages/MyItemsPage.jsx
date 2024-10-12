@@ -33,7 +33,7 @@ const mockItems = [
 export default function MyItemsPage() {
   return (
     <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-8 text-center">My Items</h1>
+      <h1 className="text-3xl font-bold mb-8 text-center">Mes Objets</h1>
       <div className="bg-white shadow-md rounded-lg overflow-hidden">
         <table className="min-w-full leading-normal">
           <thead>

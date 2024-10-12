@@ -16,7 +16,7 @@ export default function HomePage() {
           </p>
           <Link
             to="/report"
-            className="bg-gradient-to-r from-yellow-200 to-green-500 text-black px-6 py-2 rounded-full font-semibold transition duration-300 shadow-md"
+            className="bg-gradient-to-r from-yellow-200 to-green-500 text-black px-6 py-2 rounded-full font-semibold"
           >
             Signalez votre objet!
           </Link>
