@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Menu, X, User, Building, LogOut,} from 'lucide-react'
+import { Search, Menu, X, User, Building, LogOut,} from 'lucide-react'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="flex justify-around h-10">
           <div className="flex">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <img className="h-10 w-auto" src="/search-circle.svg" alt="TLEFLI Logo" />
+              <Search className="w-8 h-8 bg-yellow-600 text-white rounded-full p-1 rotate-logo " alt="TLEFLI Logo" />
               <span className=" text-xl font-bold text-gray-800"><span className='text-yellow-600'>T</span>LEFLI</span>
             </Link>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">

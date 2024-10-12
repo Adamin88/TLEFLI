@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+* {
+  font-family: poppins;
+}
+
 @layer components {
     .zoom-in {
       @apply opacity-0;
@@ -21,7 +25,18 @@
     }
   }
 
-* {
-    font-family: poppins;
-}
+  @layer components {
+    .rotate-logo {
+      animation: rotate-text 2s linear forwards;
+    }
+  
+    @keyframes rotate-text {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
   
