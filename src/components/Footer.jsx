@@ -7,24 +7,23 @@ export default function Footer() {
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h3 className="text-xl font-bold mb-2">TLEFLI</h3>
-            <p className="text-sm">Helping you find what's lost and return what's found.</p>
+            <p className="text-sm">Vous aider à retrouver ce qui est perdu et à restituer ce qui est trouvé.</p>
           </div>
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
-            <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-2">Liens</h4>
             <ul className="text-sm">
               <li><Link to="/" className="hover:text-blue-300">Home</Link></li>
-              <li><Link to="/report" className="hover:text-blue-300">Report Item</Link></li>
-              <li><Link to="/my-items" className="hover:text-blue-300">My Items</Link></li>
-              <li><Link to="/about" className="hover:text-blue-300">About Us</Link></li>
+              <li><Link to="/" className="hover:text-blue-300">Contact</Link></li>
+              <li><Link to="/" className="hover:text-blue-300">À propos</Link></li>
             </ul>
           </div>
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
-            <h4 className="text-lg font-semibold mb-2">Contact Us</h4>
+            <h4 className="text-lg font-semibold mb-2">Nous contacter</h4>
             <p className="text-sm">Email: info@tlefli.com</p>
             <p className="text-sm">Phone: (123) 456-7890</p>
           </div>
           <div className="w-full md:w-1/4">
-            <h4 className="text-lg font-semibold mb-2">Follow Us</h4>
+            <h4 className="text-lg font-semibold mb-2">Suivez-nous</h4>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-blue-300">
                 <span className="sr-only">Facebook</span>

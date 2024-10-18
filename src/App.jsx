@@ -13,6 +13,9 @@ import OrganizationSignInPage from './pages/OrganizationSignInPage'
 import OrganizationSignUpPage from './pages/OrganizationSignUpPage'
 import UserDashboard from './components/UserDashboard'
 import OrganizationDashboard from './components/OrganizationDashboard'
+import DeclareAnItem from './components/DeclareAnItem'
+
+
 export default function App() {
   return (
     <Router>
@@ -30,6 +33,7 @@ export default function App() {
                 <OrganizationDashboard />
             } />
             <Route path="/report" element={<ReportItemPage />} />
+            <Route path="declareitem" element={<DeclareAnItem />}></Route>
             <Route path="/my-items" element={<MyItemsPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/organizations" element={<OrganizationPage />} />
