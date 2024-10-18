@@ -41,7 +41,7 @@ export default function HomePage() {
               <div className="bg-yellow-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Search className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">1.Report</h3>
+              <h3 className="text-xl font-semibold mb-2">1.Signalez</h3>
               <p>
                 Signalez rapidement les objets perdus ou trouvés avec des
                 descriptions détaillées et des photos.
@@ -51,7 +51,7 @@ export default function HomePage() {
               <div className="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">2.Match</h3>
+              <h3 className="text-xl font-semibold mb-2">2.Synchronisation</h3>
               <p>
                 Quand votre objet est retrouvé, vous pouvez prouver qu'il vous
                 appartient en répondant à une question de sécurité (par exemple
@@ -64,7 +64,7 @@ export default function HomePage() {
               <div className="bg-yellow-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Bell className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">3.Reunite</h3>
+              <h3 className="text-xl font-semibold mb-2">3.Réunir</h3>
               <p>
                 Après votre authentification, vous recevrez les instructions
                 pour récupérer votre objet ou pour organiser sa livraison.
