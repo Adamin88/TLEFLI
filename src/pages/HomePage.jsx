@@ -76,7 +76,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      
+      <section className="py-16 bg-gradient-to-r from-rose-100 to-teal-100">
+        <div className="container mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl font-light mb-6 border-b-2 text-yellow-600 ">
+              Notre Mission
+            </h2>
+            <p className="p-5 text-3xl font-extrabold ">
+              Connecter les objets perdus à leurs propriétaires.
+            </p>
+            <p className="text-lg text-gray-700 mb-8">
+              Chez TLEFLI, notre mission est de créer une communauté mondiale
+              qui aide les personnes à récupérer leurs objets perdus et à rendre
+              les objets trouvés à leurs propriétaires légitimes. Nous croyons
+              en la puissance de la technologie et de la bienveillance humaine
+              pour rendre le monde un peu meilleur, un objet perdu à la fois.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section className="bg-white py-16 ">
         <div className="container mx-auto">
