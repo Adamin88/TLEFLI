@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Search, Menu, X, User, Building, LogOut,} from 'lucide-react'
+import { Search, Menu, X, User, Building, LogOut, House, LayoutDashboard} from 'lucide-react'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -39,11 +39,13 @@ const Navbar = () => {
               <span className=" text-xl text-gray-800 font-semibold"><span className='text-yellow-600 ml-1'>T</span>LEFLI</span>
             </Link>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-              <Link to="/" className="border-transparent text-gray-800 hover:border-gray-300 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              <Link to="/" className="border-transparent text-black hover:border-gray-300 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                <House className="inline-block w-5 h-5 mr-1" />
                 Home
               </Link>
-              <Link to="/*" className="border-transparent text-gray-800 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                Mes Objets
+              <Link to="/dashboard" className="border-transparent text-gray-800 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                <LayoutDashboard className="inline-block w-5 h-5 mr-1" />
+                Dashboard
               </Link>
             </div>
           </div>

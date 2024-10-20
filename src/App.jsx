@@ -1,20 +1,20 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import HomePage from './pages/HomePage'
-import ReportItemPage from './pages/ReportItemPage'
-import MyItemsPage from './pages/MyItemsPage'
-import AboutPage from './pages/AboutPage'
-import OrganizationPage from './pages/OrganizationPage'
-import NotFoundPage from './pages/NotFoundPage'
-import UserSignInPage from './pages/UserSignInPage'
-import UserSignUpPage from './pages/UserSignUpPage'
-import OrganizationSignInPage from './pages/OrganizationSignInPage'
-import OrganizationSignUpPage from './pages/OrganizationSignUpPage'
-import UserDashboard from './components/UserDashboard'
-import OrganizationDashboard from './components/OrganizationDashboard'
-import DeclareAnItem from './components/DeclareAnItem'
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import ReportItemPage from "./pages/ReportItemPage";
+import MyItemsPage from "./pages/MyItemsPage";
+import AboutPage from "./pages/AboutPage";
+import OrganizationPage from "./pages/OrganizationPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import UserSignInPage from "./pages/UserSignInPage";
+import UserSignUpPage from "./pages/UserSignUpPage";
+import OrganizationSignInPage from "./pages/OrganizationSignInPage";
+import OrganizationSignUpPage from "./pages/OrganizationSignUpPage";
+import UserDashboard from "./components/UserDashboard";
+import OrganizationDashboard from "./components/OrganizationDashboard";
+import DeclareAnItem from "./components/DeclareAnItem";
+import Dashboard from "./components/Dashboard";
 
 export default function App() {
   return (
@@ -29,19 +29,18 @@ export default function App() {
             <Route path="/org-signin" element={<OrganizationSignInPage />} />
             <Route path="/org-signup" element={<OrganizationSignUpPage />} />
             <Route path="/user-dashboard" element={<UserDashboard />} />
-            <Route path="/org-dashboard" element={
-                <OrganizationDashboard />
-            } />
+            <Route path="/org-dashboard" element={<OrganizationDashboard />} />
             <Route path="/report" element={<ReportItemPage />} />
-            <Route path="declareitem" element={<DeclareAnItem />}></Route>
+            <Route path="declareitem" element={<DeclareAnItem />} />
             <Route path="/my-items" element={<MyItemsPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/organizations" element={<OrganizationPage />} />
             <Route path="*" element={<NotFoundPage />} />
+            <Route path="dashboard" element={<Dashboard />} />
           </Routes>
         </main>
         <Footer />
       </div>
     </Router>
-  )
+  );
 }
