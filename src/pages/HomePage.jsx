@@ -4,7 +4,7 @@ import { Search, MapPin, Bell, Users, BarChart, Globe } from "lucide-react";
 export default function HomePage() {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <header className="text-white py-16 bg-gradient-to-r from-gray-700 to-black">
+      <header className="text-white py-16 bg-gradient-to-r from-gray-700 to-gray-900">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl font-extrabold mb-4 text-zinc-400">
             Ce qui est perdu
